@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const express = require("express");
 const bodyParser = require("body-parser");
 const logger = require("morgan");
+const User = require("./User");
 
 require("dotenv").config({
   path: "/Users/chrispfaff/Desktop/Projects/FingerRoll/.env"
@@ -33,7 +34,15 @@ app.use(logger("dev"));
 app.use("/api", router);
 
 router.get("/", (req, res) => {
-  res.send("hello");
+  // let user = new User({ name: "chris", team: "cavaliers" });
+  // user.save(err => {
+  //   if (err) {
+  //     console.log(err);
+  //   } else {
+  //     console.log("Success");
+  //   }
+  // });
+  res.send();
 });
 
 app.listen(API_PORT, () => {
