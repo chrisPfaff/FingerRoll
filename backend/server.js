@@ -7,8 +7,8 @@ require("dotenv").config({
   path: "/Users/chrispfaff/Desktop/Projects/FingerRoll/.env"
 });
 
-const API_PORT = 3001;
 const app = express();
+const API_PORT = 3001;
 
 const router = express.Router();
 
@@ -30,7 +30,12 @@ db.on("error", console.error.bind(console, "MongoDB connection error:"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(logger("dev"));
+app.use("/api", router);
 
-router.get("/getData", (req, res) => {
+router.get("/", (req, res) => {
   res.send("hello");
+});
+
+app.listen(API_PORT, () => {
+  console.log(`server is listening on ${API_PORT} `);
 });
