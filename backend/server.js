@@ -45,6 +45,16 @@ router.get("/", (req, res) => {
   res.send();
 });
 
+router.get("/data", (req, res) => {
+  User.find((err, data) => {
+    if (err) {
+      return res.json({ success: false, error: err });
+    } else {
+      res.json({ success: true, data: data });
+    }
+  });
+});
+
 app.listen(API_PORT, () => {
   console.log(`server is listening on ${API_PORT} `);
 });
