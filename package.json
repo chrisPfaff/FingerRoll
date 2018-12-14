@@ -4,7 +4,7 @@
   "description": "Nba Stats App",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "concurrently \"cd backend && node server.js\" \"cd client && npm start\""
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/chrisPfaff/FingerRoll/issues"
   },
-  "homepage": "https://github.com/chrisPfaff/FingerRoll#readme"
+  "homepage": "https://github.com/chrisPfaff/FingerRoll#readme",
+  "dependencies": {
+    "concurrently": "^4.1.0"
+  }
 }
