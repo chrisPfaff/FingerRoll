@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Card from "./Card";
-import "./styles/app.css";
+import Header from "./Header";
+import "../styles/app.css";
 class App extends Component {
   state = {
     data: []
@@ -26,7 +27,12 @@ class App extends Component {
         />
       );
     });
-    return <div className="mainContainer">{teamCards}</div>;
+    return (
+      <div>
+        <Header />
+        <div className="mainContainer">{teamCards}</div>
+      </div>
+    );
   }
 }
 
