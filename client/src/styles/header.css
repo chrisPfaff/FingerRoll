@@ -2,3 +2,10 @@
   padding-top: 10px;
   margin: 20px 0 0 20px;
 }
+
+.headerContainer {
+  padding: 20px;
+  background-image: url("https://cdn.pixabay.com/photo/2014/07/11/17/03/basketball-390008_1280.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
