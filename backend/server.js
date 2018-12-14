@@ -28,10 +28,10 @@ db.once("open", () => console.log("connected to the database"));
 
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 
+app.use("/api", router);
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(logger("dev"));
-app.use("/api", router);
 
 router.get("/", (req, res) => {
   // let user = new User({ name: "chris", team: "cavaliers" });
@@ -50,6 +50,7 @@ router.get("/data", (req, res) => {
     if (err) {
       return res.json({ success: false, error: err });
     } else {
+      console.log(data);
       res.json({ success: true, data: data });
     }
   });
