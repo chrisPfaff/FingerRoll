@@ -1,27 +1,32 @@
 import React, { Component } from "react";
-
+import Card from "./Card";
+import "./styles/app.css";
 class App extends Component {
   state = {
     data: []
   };
 
   componentDidMount() {
-    fetch("/api/data")
+    fetch("/api/landing")
       .then(res => {
         return res.json();
       })
       .then(data => {
-        console.log(data.data[0]);
-        this.setState({ data: data.data[0] });
+        this.setState({ data: data });
       });
   }
   render() {
-    return (
-      <div>
-        <p>{this.state.data.name}</p>
-        <p>{this.state.data.team}</p>
-      </div>
-    );
+    const teamCards = this.state.data.map(item => {
+      return (
+        <Card
+          fullName={item.fullName}
+          city={item.city}
+          nickname={item.nickname}
+          logo={item.logo}
+        />
+      );
+    });
+    return <div className="mainContainer">{teamCards}</div>;
   }
 }
 

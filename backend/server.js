@@ -3,6 +3,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const logger = require("morgan");
 const User = require("./User");
+const axios = require("axios");
 
 require("dotenv").config({
   path: "/Users/chrispfaff/Desktop/Projects/FingerRoll/.env"
@@ -43,6 +44,17 @@ router.get("/", (req, res) => {
   //   }
   // });
   res.send();
+});
+
+router.get("/landing", async (req, res) => {
+  let east = await axios
+    .get("https://demo7799958.mockable.io/teams")
+    .then(teams => {
+      return teams.data;
+    });
+
+  res.json(east);
+  //use promise all with real data
 });
 
 router.get("/data", (req, res) => {
