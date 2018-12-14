@@ -5,7 +5,7 @@ const Card = props => {
   return (
     <div className="ui card">
       <div className="image">
-        <img className=" logo" src={props.logo} alt="fake image" />
+        <img className=" logo" src={props.logo} alt="team logo" />
       </div>
       <div className="content">
         <a className="header">{props.fullName}</a>
