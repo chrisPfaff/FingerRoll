@@ -50,7 +50,6 @@ router.get("/data", (req, res) => {
     if (err) {
       return res.json({ success: false, error: err });
     } else {
-      console.log(data);
       res.json({ success: true, data: data });
     }
   });
