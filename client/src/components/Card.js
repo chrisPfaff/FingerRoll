@@ -8,9 +8,9 @@ const Card = props => {
         <img className=" logo" src={props.logo} alt="team logo" />
       </div>
       <div className="content">
-        <a className="header">{props.fullName}</a>
+        <a className="header">{props.city}</a>
         <div className="meta">
-          <span className="date">{props.nickname}</span>
+          <span className="nickname">{props.nickname}</span>
         </div>
       </div>
     </div>

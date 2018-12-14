@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "hokjesgeestregular";
+  src: url("../fonts/hokjesgeest-webfont.woff2") format("woff2"),
+    url("../fonts/hokjesgeest-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .logo {
   padding: 40px;
+}
+
+.content {
+  text-align: center;
+}
+
+.nickname {
+  line-height: 30px;
+  font-family: "hokjesgeestregular", Arial;
+  font-size: 20px;
 }

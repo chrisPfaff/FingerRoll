@@ -1,11 +1,20 @@
-.headerLogo img {
-  padding-top: 10px;
-  margin: 20px 0 0 20px;
+@font-face {
+  font-family: "hokjesgeestregular";
+  src: url("../fonts/hokjesgeest-webfont.woff2") format("woff2"),
+    url("../fonts/hokjesgeest-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .headerContainer {
-  padding: 20px;
   background-image: url("https://cdn.pixabay.com/photo/2014/07/11/17/03/basketball-390008_1280.jpg");
   background-size: cover;
   background-position: 50% 50%;
+  padding: 10px;
+  text-align: center;
+}
+
+.headerText {
+  font-size: 80px;
+  font-family: "hokjesgeestregular", Arial;
 }
