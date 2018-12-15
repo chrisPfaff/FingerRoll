@@ -25,9 +25,16 @@
 .content {
   text-align: center;
 }
+.content .header {
+  text-decoration-line: underline;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+}
 
 .nickname {
   line-height: 30px;
   font-family: "hokjesgeestregular", Arial;
   font-size: 20px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px black;
 }
