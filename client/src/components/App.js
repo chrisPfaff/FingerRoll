@@ -1,7 +1,11 @@
 import React, { Component } from "react";
+
 import Card from "./Card";
 import Header from "./Header";
+import Footer from "./Footer";
+
 import "../styles/app.css";
+
 class App extends Component {
   state = {
     data: []
@@ -31,6 +35,7 @@ class App extends Component {
       <div>
         <Header />
         <div className="mainContainer">{teamCards}</div>
+        <Footer />
       </div>
     );
   }

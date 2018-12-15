@@ -6,16 +6,17 @@
   font-style: normal;
 }
 
-.logo {
-  padding: 50px;
-}
-
-.content {
+.footerContainer {
+  background-image: url("https://cdn.pixabay.com/photo/2014/07/11/17/03/basketball-390008_1280.jpg");
+  background-size: cover;
+  background-position: 100% 100%;
+  padding: 10px;
   text-align: center;
+  position: relative;
+  bottom: sticky;
 }
 
-.nickname {
-  line-height: 30px;
+.footerText {
+  font-size: 10px;
   font-family: "hokjesgeestregular", Arial;
-  font-size: 20px;
 }

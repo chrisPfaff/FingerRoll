@@ -3,6 +3,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-bottom: 80px;
-  margin-top: 50px;
+  padding-top: 30px;
+  background-image: url("https://get.pxhere.com/photo/wood-texture-floor-wall-pine-construction-tile-lumber-surface-wood-floor-basketball-court-hardwood-wooden-flooring-plywood-wood-flooring-laminate-flooring-wood-stain-897444.jpg");
+  border-top: solid;
+  border-bottom: solid;
 }
