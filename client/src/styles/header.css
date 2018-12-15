@@ -10,6 +10,9 @@
   background-image: url("https://cdn.pixabay.com/photo/2014/07/11/17/03/basketball-390008_1280.jpg");
   background-size: cover;
   background-position: 50% 50%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   padding: 10px;
   text-align: center;
 }
@@ -17,4 +20,5 @@
 .headerText {
   font-size: 80px;
   font-family: "hokjesgeestregular", Arial;
+  letter-spacing: 5px;
 }

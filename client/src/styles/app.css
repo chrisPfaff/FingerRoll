@@ -8,3 +8,7 @@
   border-top: 9px solid rgba(0, 0, 0, 0.61);
   border-bottom: 9px solid rgba(0, 0, 0, 0.61);
 }
+
+body {
+  background-color: black;
+}

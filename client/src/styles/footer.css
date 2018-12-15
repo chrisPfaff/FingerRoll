@@ -9,7 +9,10 @@
 .footerContainer {
   background-image: url("https://cdn.pixabay.com/photo/2014/07/11/17/03/basketball-390008_1280.jpg");
   background-size: cover;
-  background-position: 100% 100%;
+  background-position: 50% 50%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   padding: 10px;
   text-align: center;
   position: relative;
