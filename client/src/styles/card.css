@@ -10,6 +10,11 @@
   -moz-box-shadow: 0em 0.2em 0em inset;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.46);
 }
+
+.ui.card:first-child {
+  margin-top: 1em;
+}
+
 .logo {
   padding: 50px;
 }
