@@ -20,6 +20,29 @@
 .headerText {
   font-size: 80px;
   font-family: "hokjesgeestregular", Arial;
-
   letter-spacing: 5px;
+}
+
+@media only screen and (max-width: 891px) {
+  .headerText {
+    font-size: 60px;
+    font-family: "hokjesgeestregular", Arial;
+    letter-spacing: 5px;
+  }
+}
+
+@media only screen and (max-width: 679px) {
+  .headerText {
+    font-size: 40px;
+    font-family: "hokjesgeestregular", Arial;
+    letter-spacing: 5px;
+  }
+}
+
+@media only screen and (max-width: 473px) {
+  .headerText {
+    font-size: 20px;
+    font-family: "hokjesgeestregular", Arial;
+    letter-spacing: 5px;
+  }
 }
