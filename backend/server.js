@@ -5,9 +5,9 @@ const logger = require('morgan')
 const User = require('./User')
 const axios = require('axios')
 
-require('dotenv').config({
-  path: '/Users/chrispfaff/Desktop/Projects/FingerRoll/.env'
-})
+require('dotenv').config({ path: '/Users/chrispfaff/Projects/FingerRoll/.env' })
+
+console.log(process.env.DB_PASSWORD)
 
 const app = express()
 const API_PORT = 3001
@@ -35,15 +35,19 @@ app.use(bodyParser.json())
 app.use(logger('dev'))
 
 router.get('/', (req, res) => {
-  // let user = new User({ name: "chris", team: "cavaliers" });
-  // user.save(err => {
-  //   if (err) {
-  //     console.log(err);
-  //   } else {
-  //     console.log("Success");
-  //   }
-  // });
-  res.send()
+  let user = new User({
+    name: 'chris',
+    password: 'helloworld',
+    team: 'cavaliers'
+  })
+  user.save(err => {
+    if (err) {
+      console.log(err)
+    } else {
+      console.log('Success')
+    }
+  })
+  res.json(process.env.DB_PASSWORD)
 })
 
 router.get('/landing', async (req, res) => {

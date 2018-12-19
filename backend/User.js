@@ -6,6 +6,10 @@ const User = new Schema({
     type: String,
     required: true
   },
+  password: {
+    type: String,
+    required: true
+  },
   team: {
     type: String,
     required: true
