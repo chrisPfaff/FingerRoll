@@ -1,0 +1,15 @@
+.loginButton {
+  background-color: black;
+  color: white;
+  height: 40px;
+  border: none;
+  margin-right: 50px;
+  border: solid;
+}
+
+.loginButton:hover {
+  cursor: pointer;
+}
+.loginButton:focus {
+  outline: 0;
+}

@@ -8,19 +8,75 @@
 
 .headerContainer {
   background-image: url('../img/basketball.jpg');
-  background-size: cover;
-  background-position: 50% 50%;
+  background-position: -470% 51%;
   background-clip: text;
+  background-size: 950px;
   -webkit-background-clip: text;
   color: transparent;
+  height: 100px;
   padding: 10px;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+  animation: animatedBackground 12s linear infinite;
+  -moz-animation: animatedBackground 10s linear infinite;
+  -webkit-animation: animatedBackground 10s linear infinite;
+  -ms-animation: animatedBackground 10s linear infinite;
+  -o-animation: animatedBackground 10s linear infinite;
+}
+
+.loginIcon {
+  margin-right: 5px;
+}
+@keyframes animatedBackground {
+  0% {
+    background-position: -470% 51%;
+  }
+  100% {
+    background-position: -260px 51%;
+  }
+}
+@-moz-keyframes animatedBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -300px 0;
+  }
+}
+@-webkit-keyframes animatedBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -300px 0;
+  }
+}
+@-ms-keyframes animatedBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -300px 0;
+  }
+}
+@-o-keyframes animatedBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -300px 0;
+  }
 }
 
 .headerText {
-  font-size: 80px;
+  padding: 10px 0 0 30px;
+  font-size: 70px;
   font-family: 'hokjesgeestregular', Arial;
   letter-spacing: 5px;
+  margin-right: auto;
 }
 
 @media only screen and (max-width: 891px) {

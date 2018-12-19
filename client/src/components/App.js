@@ -35,7 +35,7 @@ class App extends Component {
     })
     return (
       <div>
-        <Header />
+        <Header open={this.state.login} />
         <div className="mainContainer">{teamCards}</div>
         <Footer />
       </div>

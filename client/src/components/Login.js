@@ -9,7 +9,7 @@ class Login extends Component {
     return (
       <div className="Login">
         <h3>Login/SignUp</h3>
-        <form action="api/login">
+        <form action="api/login" id="loginForm">
           <label htmlFor="username">Username</label>
           <input type="text" name="username" />
           <select name="teams" id="teamName">
@@ -52,6 +52,9 @@ class Login extends Component {
           <label htmlFor="password">password</label>
           <input type="password" name="password" id="" />
         </form>
+        <button type="submit" value="submit" form="loginForm">
+          Login/Signup
+        </button>
       </div>
     )
   }
