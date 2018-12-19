@@ -21,7 +21,12 @@ class App extends Component {
       .then(data => {
         this.setState({ data: data })
       })
+
+    this.loginClick = () => {
+      this.setState({ login: !this.state.login })
+    }
   }
+
   render() {
     const teamCards = this.state.data.map(item => {
       return (
@@ -35,7 +40,7 @@ class App extends Component {
     })
     return (
       <div>
-        <Header open={this.state.login} />
+        <Header open={this.loginClick} />
         <div className="mainContainer">{teamCards}</div>
         <Footer />
       </div>
