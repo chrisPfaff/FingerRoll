@@ -3,12 +3,14 @@ import React, { Component } from 'react'
 import Card from './Card'
 import Header from './Header'
 import Footer from './Footer'
+//import Login from './Login'
 
 import '../styles/app.css'
 
 class App extends Component {
   state = {
-    data: []
+    data: [],
+    login: false
   }
 
   componentDidMount() {
