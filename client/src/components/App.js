@@ -1,24 +1,24 @@
-import React, { Component } from "react";
+import React, { Component } from 'react'
 
-import Card from "./Card";
-import Header from "./Header";
-import Footer from "./Footer";
+import Card from './Card'
+import Header from './Header'
+import Footer from './Footer'
 
-import "../styles/app.css";
+import '../styles/app.css'
 
 class App extends Component {
   state = {
     data: []
-  };
+  }
 
   componentDidMount() {
-    fetch("/api/landing")
+    fetch('/api/landing')
       .then(res => {
-        return res.json();
+        return res.json()
       })
       .then(data => {
-        this.setState({ data: data });
-      });
+        this.setState({ data: data })
+      })
   }
   render() {
     const teamCards = this.state.data.map(item => {
@@ -29,16 +29,16 @@ class App extends Component {
           nickname={item.nickname}
           logo={item.logo}
         />
-      );
-    });
+      )
+    })
     return (
       <div>
         <Header />
         <div className="mainContainer">{teamCards}</div>
         <Footer />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App

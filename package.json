@@ -4,7 +4,8 @@
   "description": "Nba Stats App",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"cd backend && node server.js\" \"cd client && npm start\""
+    "start": "concurrently \"cd backend && node server.js\" \"cd client && npm start\"",
+    "format": "pretty-quick"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,13 @@
   "homepage": "https://github.com/chrisPfaff/FingerRoll#readme",
   "dependencies": {
     "concurrently": "^4.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.10.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "prettier": "^1.15.3",
+    "pretty-quick": "^1.8.0"
   }
 }
