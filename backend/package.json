@@ -9,6 +9,7 @@
   "author": "chris pfaff",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^3.0.2",
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "dotenv": "^6.2.0",

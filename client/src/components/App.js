@@ -6,13 +6,16 @@ import Footer from './Footer'
 //import Login from './Login'
 
 import '../styles/app.css'
+import Modal from './Modal'
 
 class App extends Component {
-  state = {
-    data: [],
-    login: false
+  constructor(props) {
+    super(props)
+    this.state = {
+      data: [],
+      login: false
+    }
   }
-
   componentDidMount() {
     fetch('/api/landing')
       .then(res => {
@@ -21,13 +24,14 @@ class App extends Component {
       .then(data => {
         this.setState({ data: data })
       })
+  }
 
-    this.loginClick = () => {
-      this.setState({ login: !this.state.login })
-    }
+  loginClick = () => {
+    this.setState({ login: !this.state.login })
   }
 
   render() {
+    const { login } = this.state
     const teamCards = this.state.data.map(item => {
       return (
         <Card
@@ -41,6 +45,7 @@ class App extends Component {
     return (
       <div>
         <Header open={this.loginClick} />
+        {login ? <Modal close={this.loginClick} /> : ''}
         <div className="mainContainer">{teamCards}</div>
         <Footer />
       </div>

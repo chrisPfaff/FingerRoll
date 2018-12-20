@@ -18,8 +18,7 @@
   },
   "homepage": "https://github.com/chrisPfaff/FingerRoll#readme",
   "dependencies": {
-    "concurrently": "^4.1.0",
-    "bcrypt": "^3.0.2"
+    "concurrently": "^4.1.0"
   },
   "devDependencies": {
     "babel-eslint": "9.0.0",

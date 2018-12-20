@@ -1,15 +1,15 @@
 {
-  "main.css": "/static/css/main.0c617b42.chunk.css",
-  "main.js": "/static/js/main.0d7d6dfe.chunk.js",
-  "main.js.map": "/static/js/main.0d7d6dfe.chunk.js.map",
-  "static/js/1.324b6cf3.chunk.js": "/static/js/1.324b6cf3.chunk.js",
-  "static/js/1.324b6cf3.chunk.js.map": "/static/js/1.324b6cf3.chunk.js.map",
+  "main.css": "/static/css/main.1562c866.chunk.css",
+  "main.js": "/static/js/main.449b3894.chunk.js",
+  "main.js.map": "/static/js/main.449b3894.chunk.js.map",
+  "static/js/1.12df8aef.chunk.js": "/static/js/1.12df8aef.chunk.js",
+  "static/js/1.12df8aef.chunk.js.map": "/static/js/1.12df8aef.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/css/main.0c617b42.chunk.css.map": "/static/css/main.0c617b42.chunk.css.map",
+  "static/css/main.1562c866.chunk.css.map": "/static/css/main.1562c866.chunk.css.map",
   "static/media/footer.css": "/static/media/hokjesgeest-webfont.127935f4.woff",
   "static/media/header.css": "/static/media/basketball.110906f8.jpg",
   "index.html": "/index.html",
-  "precache-manifest.089b71b3646f3e71422d85afbe8e7e74.js": "/precache-manifest.089b71b3646f3e71422d85afbe8e7e74.js",
+  "precache-manifest.bcca2a4d79a030d828421770d6ffdd0f.js": "/precache-manifest.bcca2a4d79a030d828421770d6ffdd0f.js",
   "service-worker.js": "/service-worker.js"
 }
