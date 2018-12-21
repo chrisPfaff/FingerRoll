@@ -45,9 +45,9 @@ class App extends Component {
     return (
       <div>
         <Header open={this.loginClick} />
-        {login ? <Modal close={this.loginClick} /> : ''}
         <div className="mainContainer">{teamCards}</div>
         <Footer />
+        {login ? <Modal close={this.loginClick} /> : ''}
       </div>
     )
   }

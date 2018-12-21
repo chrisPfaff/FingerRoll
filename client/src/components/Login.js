@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import '../styles/login.css'
+
 class Login extends Component {
   constructor(props) {
     super(props)
@@ -7,7 +9,7 @@ class Login extends Component {
   }
   render() {
     return (
-      <div className="Login">
+      <div className="login">
         <h3>Login/SignUp</h3>
         <form action="api/login" id="loginForm">
           <label htmlFor="username">Username</label>
