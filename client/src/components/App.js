@@ -13,7 +13,8 @@ class App extends Component {
     super(props)
     this.state = {
       data: [],
-      login: false
+      login: false,
+      hidden: 'visable'
     }
   }
   componentDidMount() {
@@ -47,7 +48,14 @@ class App extends Component {
         <Header open={this.loginClick} />
         <div className="mainContainer">{teamCards}</div>
         <Footer />
-        {login ? <Modal close={this.loginClick} /> : ''}
+        {login ? (
+          <Modal
+            close={this.loginClick}
+            style={{ visability: this.state.hidden }}
+          />
+        ) : (
+          ''
+        )}
       </div>
     )
   }
