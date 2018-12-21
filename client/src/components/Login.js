@@ -3,11 +3,8 @@ import React, { Component } from 'react'
 import '../styles/login.css'
 
 class Login extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {}
-  }
   render() {
+    console.log(this.props)
     return (
       <div className="login">
         <h3>Login/SignUp</h3>
@@ -56,6 +53,9 @@ class Login extends Component {
         </form>
         <button type="submit" value="submit" form="loginForm">
           Login/Signup
+        </button>
+        <button className="loginButton" onClick={this.props.close}>
+          Close Modal
         </button>
       </div>
     )
