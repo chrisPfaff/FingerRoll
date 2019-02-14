@@ -4,9 +4,9 @@ import Card from './Card'
 import Header from './Header'
 import Footer from './Footer'
 //import Login from './Login'
+import Modal from './Modal'
 
 import '../styles/app.css'
-import Modal from './Modal'
 
 class App extends Component {
   constructor(props) {
@@ -25,6 +25,10 @@ class App extends Component {
       .then(data => {
         this.setState({ data: data })
       })
+  }
+  handleLoginSubmit = (event, login, favTeam, passWord) => {
+    fetch('api/submit')
+    console.log(login, favTeam, passWord)
   }
 
   loginClick = () => {
@@ -50,6 +54,7 @@ class App extends Component {
         <Footer />
         {login ? (
           <Modal
+            login={this.handleLoginSubmit}
             close={this.loginClick}
             style={{ visability: this.state.hidden }}
           />

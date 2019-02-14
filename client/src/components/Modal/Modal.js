@@ -5,10 +5,10 @@ import Login from '../Login'
 
 class Modal extends Component {
   render() {
-    const { close } = this.props
+    const { close, login } = this.props
     return (
       <div className="modalContainer">
-        <Login close={close} />
+        <Login loginSubmit={login} close={close} />
       </div>
     )
   }

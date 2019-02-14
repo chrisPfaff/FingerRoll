@@ -8,12 +8,22 @@ class Login extends Component {
     return (
       <div className="login">
         <h3>Login/SignUp</h3>
-        <form action="api/login" id="loginForm">
+        <form
+          onSubmit={event => {
+            event.preventDefault()
+            let user = event.target.userName.value
+            let favTeam = event.target.teamName.value
+            let password = event.target.password.value
+
+            this.props.loginSubmit(event, user, favTeam, password)
+          }}
+          id="loginForm"
+        >
           <span className="userSpan">
-            <label className="formLabel" htmlFor="username">
+            <label className="formLabel" htmlFor="userName">
               Username :
             </label>
-            <input id="username" type="text" name="username" />
+            <input id="userName" type="text" name="username" />
           </span>
           <br />
           <br />
@@ -25,12 +35,7 @@ class Login extends Component {
             >
               Favorite Team :
             </label>
-            <select
-              className="selectMenu"
-              maxlength="10"
-              name="teams"
-              id="teamName"
-            >
+            <select className="selectMenu" name="teams" id="teamName">
               <option value="Atlanta Hawks">Atlanta Hawks</option>
               <option value="Boston Celtics">Boston Celtics</option>
               <option value="Brooklyn Nets">Brooklyn Nets</option>
@@ -81,12 +86,7 @@ class Login extends Component {
             >
               password :
             </label>
-            <input
-              id="loginPassword"
-              type="password"
-              name="password"
-              id="password"
-            />
+            <input type="password" name="password" id="password" />
           </span>
         </form>
         <span className="buttonSpan">

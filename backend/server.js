@@ -32,7 +32,8 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.use(logger('dev'))
 
-router.get('/', (req, res) => {
+router.get('/submit', (req, res) => {
+  console.log(req)
   // let user = new User({
   //   name: 'chris',
   //   password: 'helloworld',
