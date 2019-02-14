@@ -27,6 +27,15 @@
   -o-animation: animatedBackground 10s linear infinite;
 }
 
+.headerButton {
+  background-color: black;
+  color: white;
+  margin-right: 40px;
+  height: 40px;
+  border: none;
+  border: solid;
+}
+
 .loginIcon {
   margin-right: 5px;
 }

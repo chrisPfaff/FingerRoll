@@ -11,16 +11,26 @@ class Login extends Component {
         <form action="api/login" id="loginForm">
           <span className="userSpan">
             <label className="formLabel" htmlFor="username">
-              Username
+              Username :
             </label>
-            <input type="text" name="username" />
+            <input id="username" type="text" name="username" />
           </span>
           <br />
+          <br />
           <span className="teamSpan">
-            <label className="formLabel" htmlFor="favoriteTeam">
-              Favorite Team
+            <label
+              htmlFor="teamName"
+              className="formLabel"
+              htmlFor="favoriteTeam"
+            >
+              Favorite Team :
             </label>
-            <select maxlength="10" name="teams" id="teamName">
+            <select
+              className="selectMenu"
+              maxlength="10"
+              name="teams"
+              id="teamName"
+            >
               <option value="Atlanta Hawks">Atlanta Hawks</option>
               <option value="Boston Celtics">Boston Celtics</option>
               <option value="Brooklyn Nets">Brooklyn Nets</option>
@@ -62,11 +72,21 @@ class Login extends Component {
             </select>
           </span>
           <br />
+          <br />
           <span className="passwordSpan">
-            <label className="formLabel" htmlFor="password">
-              password
+            <label
+              htmlFor="loginPassword"
+              className="formLabel"
+              htmlFor="password"
+            >
+              password :
             </label>
-            <input type="password" name="password" id="" />
+            <input
+              id="loginPassword"
+              type="password"
+              name="password"
+              id="password"
+            />
           </span>
         </form>
         <span className="buttonSpan">
