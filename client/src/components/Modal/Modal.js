@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
-import '../styles/modal.css'
-import Login from './Login'
+import '../../styles/modal.css'
+import Login from '../Login'
 
 class Modal extends Component {
   render() {
