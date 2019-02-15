@@ -5,6 +5,7 @@ import Header from './Header'
 import Footer from './Footer'
 //import Login from './Login'
 import Modal from './Modal'
+import Loading from './Loading'
 
 import '../styles/app.css'
 import createUser from '../utils/utils'
@@ -62,6 +63,7 @@ class App extends Component {
         ) : (
           ''
         )}
+        <Loading />
       </div>
     )
   }

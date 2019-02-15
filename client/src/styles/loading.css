@@ -1,0 +1,22 @@
+.loadingBasketball {
+  height: 100px;
+  width: 100px;
+  animation-name: bouncingBall;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+@keyframes bouncingBall {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 249px;
+    width: 130px;
+    height: 70px;
+  }
+  100% {
+    top: 0px;
+  }
+}
