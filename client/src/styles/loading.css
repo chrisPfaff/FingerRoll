@@ -4,7 +4,6 @@
   animation-name: bouncingBall;
   animation-duration: 1s;
   animation-iteration-count: infinite;
-  position: relative;
 }
 
 @keyframes bouncingBall {
