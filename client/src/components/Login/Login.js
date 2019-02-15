@@ -4,7 +4,6 @@ import '../../styles/login.css'
 
 class Login extends Component {
   render() {
-    console.log(this.props)
     return (
       <div className="login">
         <h3>Login/SignUp</h3>

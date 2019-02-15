@@ -7,6 +7,7 @@ import Footer from './Footer'
 import Modal from './Modal'
 
 import '../styles/app.css'
+import createUser from '../utils/utils'
 
 class App extends Component {
   constructor(props) {
@@ -26,9 +27,9 @@ class App extends Component {
         this.setState({ data: data })
       })
   }
+
   handleLoginSubmit = (event, login, favTeam, passWord) => {
-    fetch('api/submit')
-    console.log(login, favTeam, passWord)
+    createUser({ login, favTeam, passWord })
   }
 
   loginClick = () => {
