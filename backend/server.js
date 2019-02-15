@@ -28,12 +28,14 @@ db.once('open', () => console.log('connected to the database'))
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 app.use('/api', router)
-app.use(bodyParser.urlencoded({ extended: false }))
-app.use(bodyParser.json())
-app.use(logger('dev'))
+router.use(bodyParser.urlencoded({ extended: false }))
+router.use(bodyParser.json())
+router.use(logger('dev'))
 
-router.get('/submit', (req, res) => {
-  console.log(req)
+router.post('/submit', (req, res) => {
+  let body = req.body
+  console.log(body.chris)
+  res.end()
   // let user = new User({
   //   name: 'chris',
   //   password: 'helloworld',
