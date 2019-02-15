@@ -33,22 +33,20 @@ router.use(bodyParser.json())
 router.use(logger('dev'))
 
 router.post('/submit', (req, res) => {
-  let body = req.body
-  console.log(body.chris)
+  const { login, passWord, favTeam } = req.body
   res.end()
-  // let user = new User({
-  //   name: 'chris',
-  //   password: 'helloworld',
-  //   team: 'cavaliers'
-  // })
-  // user.save(err => {
-  //   if (err) {
-  //     console.log(err)
-  //   } else {
-  //     console.log('Success')
-  //   }
-  // })
-  // res.json(process.env.DB_PASSWORD)
+  let user = new User({
+    name: login,
+    password: passWord,
+    team: favTeam
+  })
+  user.save(err => {
+    if (err) {
+      console.log(err)
+    } else {
+      console.log('Success')
+    }
+  })
 })
 
 router.get('/landing', async (req, res) => {
