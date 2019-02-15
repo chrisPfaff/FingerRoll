@@ -8,7 +8,7 @@ const Header = props => {
       <h1 className="headerText">FingerRoll</h1>
       <button onClick={props.open} className="headerButton">
         <GoPerson className="loginIcon" />
-        Login/Signup
+        Sign Up
       </button>
     </div>
   )

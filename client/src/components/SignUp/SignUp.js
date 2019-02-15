@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
-import '../../styles/login.css'
+import '../../styles/signup.css'
 
-class Login extends Component {
+class SignUp extends Component {
   render() {
     return (
       <div className="login">
@@ -14,7 +14,7 @@ class Login extends Component {
             let favTeam = event.target.teamName.value
             let password = event.target.password.value
 
-            this.props.loginSubmit(event, user, favTeam, password)
+            this.props.signUpSubmit(event, user, favTeam, password)
           }}
           id="loginForm"
         >
@@ -95,7 +95,7 @@ class Login extends Component {
             value="submit"
             form="loginForm"
           >
-            Login/Signup
+            Sign Up
           </button>
           <button className="loginButton" onClick={this.props.close}>
             Close Modal
@@ -106,4 +106,4 @@ class Login extends Component {
   }
 }
 
-export default Login
+export default SignUp

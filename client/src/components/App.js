@@ -28,7 +28,7 @@ class App extends Component {
       })
   }
 
-  handleLoginSubmit = (event, login, favTeam, passWord) => {
+  handleSignUpSubmit = (event, login, favTeam, passWord) => {
     createUser({ login, favTeam, passWord })
   }
 
@@ -55,7 +55,7 @@ class App extends Component {
         <Footer />
         {login ? (
           <Modal
-            login={this.handleLoginSubmit}
+            signUp={this.handleSignUpSubmit}
             close={this.loginClick}
             style={{ visability: this.state.hidden }}
           />
