@@ -16,7 +16,8 @@ class App extends Component {
     this.state = {
       data: [],
       login: false,
-      hidden: 'visable'
+      hidden: 'visable',
+      loading: false
     }
   }
   componentDidMount() {
@@ -25,7 +26,9 @@ class App extends Component {
         return res.json()
       })
       .then(data => {
-        this.setState({ data: data })
+        setTimeout(() => {
+          this.setState({ data: data, loading: true })
+        }, 2000)
       })
   }
 
@@ -51,9 +54,15 @@ class App extends Component {
     })
     return (
       <div>
-        <Header open={this.loginClick} />
-        <div className="mainContainer">{teamCards}</div>
-        <Footer />
+        {this.state.loading === false ? (
+          <Loading />
+        ) : (
+          <div>
+            <Header open={this.loginClick} />
+            <div className="mainContainer">{teamCards}</div>
+            <Footer />
+          </div>
+        )}
         {login ? (
           <Modal
             signUp={this.handleSignUpSubmit}
@@ -63,7 +72,6 @@ class App extends Component {
         ) : (
           ''
         )}
-        <Loading />
       </div>
     )
   }
