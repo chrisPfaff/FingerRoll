@@ -1,4 +1,5 @@
 .loadingBasketball {
+  position: relative;
   height: 100px;
   width: 100px;
   animation-name: bouncingBall;
@@ -6,16 +7,27 @@
   animation-iteration-count: infinite;
 }
 
+.loadingScreen {
+  text-align: center;
+  height: auto;
+  width: auto;
+}
+
+.loadingTitle {
+  color: white;
+  position: relative;
+  top: 250px;
+}
 @keyframes bouncingBall {
   0% {
-    top: 0px;
+    top: 10px;
   }
   50% {
-    top: 249px;
+    top: 259px;
     width: 130px;
     height: 70px;
   }
   100% {
-    top: 0px;
+    top: 10px;
   }
 }
