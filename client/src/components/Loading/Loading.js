@@ -4,8 +4,9 @@ import '../../styles/loading.css'
 
 const Loading = () => {
   return (
-    <div>
-      <img class="loadingBasketball" src={Basketball} alt="basketball" />
+    <div className="loadingScreen">
+      <img className="loadingBasketball" src={Basketball} alt="basketball" />
+      <h1 className="loadingTitle">Loading.....</h1>
     </div>
   )
 }
